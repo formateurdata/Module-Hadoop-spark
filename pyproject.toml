@@ -1,0 +1,24 @@
+[project]
+name = "bigdata-hadoop-spark"
+version = "0.1.0"
+description = "Démos, TP et slides du module BAC5 Big Data (Hadoop & Spark)"
+authors = [
+    { name = "Mouaad", email = "mouaad.agrm@gmail.com" }
+]
+requires-python = ">=3.13"
+# Les démos tournent dans le cluster Docker (docker-compose.yml) ;
+# côté machine, les scripts n'utilisent que la bibliothèque standard.
+dependencies = []
+
+[dependency-groups]
+# TP : notebooks exécutés sur la machine de l'étudiant, reliés au cluster par Spark Connect
+# (client Python seul, sans Java) ; ipykernel pour les choisir comme noyau dans Jupyter ou VS Code
+tp = [
+    "ipykernel==7.3.0",
+    "pyspark-client==4.1.3",
+]
+supports = [
+    "pillow==12.3.0",
+    "python-pptx==1.0.2",
+    "reportlab==5.1.0",
+]

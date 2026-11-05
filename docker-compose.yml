@@ -1,0 +1,69 @@
+# Cluster du module : un maître, trois travailleurs, un client.
+# Chaque conteneur joue le rôle d'une machine du cluster.
+#   master   NameNode (HDFS), ResourceManager (YARN), historique MapReduce, master Spark
+#   workerN  DataNode (HDFS), NodeManager (YARN), worker Spark
+#   client   serveur Spark Connect pour les notebooks, commandes hdfs / mapred / spark-submit ;
+#            les drivers Spark y tournent
+name: bigdata
+
+x-noeud: &noeud
+  image: goldencollar/hadoop-spark:4.1.3-3.5.0
+  build: ./cluster
+  environment:
+    # Ressources qu'un worker Spark offre au cluster (même ordre de grandeur que YARN)
+    SPARK_WORKER_CORES: "2"
+    SPARK_WORKER_MEMORY: 2g
+
+services:
+  master:
+    <<: *noeud
+    hostname: master
+    command: master
+    ports:
+      - "127.0.0.1:9870:9870"    # NameNode
+      - "127.0.0.1:8088:8088"    # ResourceManager
+      - "127.0.0.1:19888:19888"  # historique MapReduce
+      - "127.0.0.1:8080:8080"    # master Spark
+    volumes:
+      - master:/data
+
+  worker1:
+    <<: *noeud
+    hostname: worker1
+    command: worker
+    depends_on: [master]
+    volumes:
+      - worker1:/data
+
+  worker2:
+    <<: *noeud
+    hostname: worker2
+    command: worker
+    depends_on: [master]
+    volumes:
+      - worker2:/data
+
+  worker3:
+    <<: *noeud
+    hostname: worker3
+    command: worker
+    depends_on: [master]
+    volumes:
+      - worker3:/data
+
+  client:
+    <<: *noeud
+    hostname: client
+    command: client
+    depends_on: [master]
+    ports:
+      - "127.0.0.1:15002:15002"  # Spark Connect, pour les notebooks lancés sur la machine hôte
+      - "127.0.0.1:4040:4040"    # interface du serveur Spark Connect
+    volumes:
+      - ./:/cours
+
+volumes:
+  master:
+  worker1:
+  worker2:
+  worker3:
