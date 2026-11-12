@@ -1,0 +1,16 @@
+{
+  "un_fichier": {
+    "fichiers": 1,
+    "blocs": 2,
+    "objets": 3,
+    "espace_disque": 615727104,
+    "depot_s": 2.9
+  },
+  "jours": {
+    "fichiers": 28,
+    "blocs": 28,
+    "objets": 56,
+    "espace_disque": 615727104,
+    "depot_s": 2.9
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mesures": [
+    {
+      "facteur": 2,
+      "taille": 205242368,
+      "espace_disque": 410484736
+    },
+    {
+      "facteur": 3,
+      "taille": 205242368,
+      "espace_disque": 615727104
+    }
+  ],
+  "taille": 205242368
+}

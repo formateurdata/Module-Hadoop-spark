@@ -1,0 +1,81 @@
+{
+  "octets": 205242368,
+  "blocs_attendus": 7,
+  "blocs": [
+    {
+      "bloc": 0,
+      "octets": 33554432,
+      "copies": 3,
+      "sur": [
+        "worker1",
+        "worker2",
+        "worker3"
+      ]
+    },
+    {
+      "bloc": 1,
+      "octets": 33554432,
+      "copies": 3,
+      "sur": [
+        "worker1",
+        "worker2",
+        "worker3"
+      ]
+    },
+    {
+      "bloc": 2,
+      "octets": 33554432,
+      "copies": 3,
+      "sur": [
+        "worker1",
+        "worker2",
+        "worker3"
+      ]
+    },
+    {
+      "bloc": 3,
+      "octets": 33554432,
+      "copies": 3,
+      "sur": [
+        "worker1",
+        "worker2",
+        "worker3"
+      ]
+    },
+    {
+      "bloc": 4,
+      "octets": 33554432,
+      "copies": 3,
+      "sur": [
+        "worker1",
+        "worker2",
+        "worker3"
+      ]
+    },
+    {
+      "bloc": 5,
+      "octets": 33554432,
+      "copies": 3,
+      "sur": [
+        "worker1",
+        "worker2",
+        "worker3"
+      ]
+    },
+    {
+      "bloc": 6,
+      "octets": 3915776,
+      "copies": 3,
+      "sur": [
+        "worker1",
+        "worker2",
+        "worker3"
+      ]
+    }
+  ],
+  "stat": "33554432 3 205242368",
+  "du": [
+    "205242368",
+    "615727104"
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "mort_apres_s": 53,
+  "reparation_deux_copies_s": 61,
+  "blocs_du_fichier_a_2_copies_sur_worker1": 6,
+  "md5_pendant_la_panne": "4138cd7e981746fa08de662228b567c2",
+  "sous_repliques_gros_pendant": 7,
+  "sous_repliques_gros_apres_reparation": 7,
+  "sous_repliques_gros_apres_retour": 0,
+  "avant": {
+    "gros": [
+      {
+        "bloc": 0,
+        "octets": 33554432,
+        "copies": 3,
+        "sur": [
+          "worker1",
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 1,
+        "octets": 33554432,
+        "copies": 3,
+        "sur": [
+          "worker1",
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 2,
+        "octets": 33554432,
+        "copies": 3,
+        "sur": [
+          "worker1",
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 3,
+        "octets": 33554432,
+        "copies": 3,
+        "sur": [
+          "worker1",
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 4,
+        "octets": 33554432,
+        "copies": 3,
+        "sur": [
+          "worker1",
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 5,
+        "octets": 33554432,
+        "copies": 3,
+        "sur": [
+          "worker1",
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 6,
+        "octets": 3915776,
+        "copies": 3,
+        "sur": [
+          "worker1",
+          "worker2",
+          "worker3"
+        ]
+      }
+    ],
+    "deux": [
+      {
+        "bloc": 0,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker1",
+          "worker2"
+        ]
+      },
+      {
+        "bloc": 1,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker1",
+          "worker2"
+        ]
+      },
+      {
+        "bloc": 2,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker1",
+          "worker2"
+        ]
+      },
+      {
+        "bloc": 3,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker1",
+          "worker2"
+        ]
+      },
+      {
+        "bloc": 4,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker1",
+          "worker2"
+        ]
+      },
+      {
+        "bloc": 5,
+        "octets": 41610,
+        "copies": 2,
+        "sur": [
+          "worker1",
+          "worker2"
+        ]
+      }
+    ]
+  },
+  "apres": {
+    "gros": [
+      {
+        "bloc": 0,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 1,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 2,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 3,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 4,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 5,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 6,
+        "octets": 3915776,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      }
+    ],
+    "deux": [
+      {
+        "bloc": 0,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 1,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 2,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 3,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 4,
+        "octets": 33554432,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      },
+      {
+        "bloc": 5,
+        "octets": 41610,
+        "copies": 2,
+        "sur": [
+          "worker2",
+          "worker3"
+        ]
+      }
+    ]
+  }
+}
