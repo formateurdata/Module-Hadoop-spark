@@ -16,4 +16,10 @@
     <name>dfs.namenode.datanode.registration.ip-hostname-check</name>
     <value>false</value>
   </property>
+  <!-- Détection de panne accélérée pour la démonstration : un DataNode silencieux est déclaré mort
+       après 2 x 10 s + 10 x 3 s = 50 s (par défaut : 2 x 300 s + 10 x 3 s = 630 s) -->
+  <property>
+    <name>dfs.namenode.heartbeat.recheck-interval</name>
+    <value>10000</value>
+  </property>
 </configuration>

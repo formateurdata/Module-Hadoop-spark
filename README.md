@@ -44,6 +44,15 @@ docker compose down                                # supprime les conteneurs, ga
 docker compose down -v                             # supprime aussi les volumes : HDFS repart vide
 ```
 
+## Détection de panne accélérée
+
+Pour la démo de la séance 2, `cluster/conf/hadoop/hdfs-site.xml` ramène `dfs.namenode.heartbeat.recheck-interval`
+à 10 000 ms : un DataNode silencieux est déclaré mort après 50 s (2 x 10 s + 10 x 3 s) au lieu de 630 s par
+défaut. Ce réglage est dans l'image : après avoir récupéré cette version, relancez
+`docker compose up -d --build`, puis vérifiez avec
+`docker compose exec client hdfs getconf -confKey dfs.namenode.heartbeat.recheck-interval` (attendu : 10000).
+Ce n'est pas un réglage de production.
+
 ## Notebooks des TP
 
 Les notebooks tournent sur votre machine, dans votre environnement Python, hors du cluster :
